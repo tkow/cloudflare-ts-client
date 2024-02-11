@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare-ts-client",
+  "module": "src/index.ts",
+  "main": "dist/src/index.js",
+  "type": "module",
+  "files": ["./src", "dist/"],
+  "scripts": {
+    "build": "tsc",
+    "generate": "bun gen.ts"
+  },
+  "devDependencies": {
+    "@himenon/openapi-typescript-code-generator": "^1.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "bun-types": "latest",
+    "js-yaml": "^4.1.0",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
