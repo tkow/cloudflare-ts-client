@@ -5,8 +5,9 @@
     "target": "esnext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
     "composite": true,
     "strict": true,
     "downlevelIteration": true,
@@ -18,5 +19,7 @@
     "types": [
       "bun-types" // add Bun global
     ]
-  }
+  },
+  "include": ["./src"],
+  "exclude": ["**/*.spec.ts"]
 }
