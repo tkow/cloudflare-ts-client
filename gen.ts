@@ -6,9 +6,11 @@ import type * as Types from "@himenon/openapi-typescript-code-generator/dist/typ
 import * as yaml from "js-yaml";
 
 const main = async () => {
-  const oasDoc: Types.OpenApi.Document = await fetch("https://raw.githubusercontent.com/cloudflare/api-schemas/main/openapi.yaml").then(async v => {
-    return yaml.load(await v.text()) as Types.OpenApi.Document
-  })
+  // const oasDoc: Types.OpenApi.Document = await fetch("https://raw.githubusercontent.com/cloudflare/api-schemas/main/openapi.yaml").then(async v => {
+  //   return yaml.load(await v.text()) as Types.OpenApi.Document
+  // })
+
+  const oasDoc = './openapi.yaml'
   const codeGenerator = new CodeGenerator(oasDoc);
 
   const apiClientGeneratorTemplate: Types.CodeGenerator.CustomGenerator<Templates.FunctionalApiClient.Option> = {

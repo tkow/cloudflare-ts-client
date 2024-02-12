@@ -9,7 +9,7 @@
     "generate": "bun gen.ts"
   },
   "devDependencies": {
-    "@himenon/openapi-typescript-code-generator": "^1.0.4",
+    "@himenon/openapi-typescript-code-generator": "latest",
     "@types/js-yaml": "^4.0.9",
     "bun-types": "latest",
     "js-yaml": "^4.1.0",
